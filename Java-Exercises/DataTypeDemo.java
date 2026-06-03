@@ -1,0 +1,21 @@
+public class DataTypeDemo {
+
+    public static void main(String[] args) {
+
+        int age = 20;
+
+        float percentage = 89.5f;
+
+        double salary = 25000.75;
+
+        char grade = 'A';
+
+        boolean status = true;
+
+        System.out.println("Age: " + age);
+        System.out.println("Percentage: " + percentage);
+        System.out.println("Salary: " + salary);
+        System.out.println("Grade: " + grade);
+        System.out.println("Status: " + status);
+    }
+}
