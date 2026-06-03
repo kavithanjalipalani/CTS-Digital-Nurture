@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Feedback</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        img {
+            width: 200px;
+            height: 150px;
+            border: 2px solid black;
+        }
+
+        #fee,
+        #phoneMsg,
+        #charCount {
+            font-weight: bold;
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Community Event Feedback</h1>
+
+    <h3>Phone Number Validation (onblur)</h3>
+
+    <input type="text"
+           id="phone"
+           placeholder="Enter 10 digit phone number"
+           onblur="validatePhone()">
+
+    <p id="phoneMsg"></p>
+
+    <hr>
+
+    <h3>Select Event (onchange)</h3>
+
+    <select onchange="showFee(this.value)">
+        <option value="">Select Event</option>
+        <option value="100">Music Festival</option>
+        <option value="200">Sports Meet</option>
+        <option value="300">Food Festival</option>
+    </select>
+
+    <p id="fee"></p>
+
+    <hr>
+
+    <h3>Submit Registration (onclick)</h3>
+
+    <button onclick="submitForm()">
+        Submit
+    </button>
+
+    <p id="submitMsg"></p>
+
+    <hr>
+
+    <h3>Double Click Image (ondblclick)</h3>
+
+    <img src="https://picsum.photos/200/150"
+         ondblclick="enlargeImage(this)"
+         alt="Event Image">
+
+    <hr>
+
+    <h3>Feedback (Keyboard Event)</h3>
+
+    <textarea
+        id="feedback"
+        rows="5"
+        cols="40"
+        placeholder="Type your feedback..."
+        onkeyup="countCharacters()"></textarea>
+
+    <p id="charCount">Characters: 0</p>
+
+    <script>
+
+        function validatePhone() {
+
+            let phone =
+                document.getElementById("phone").value;
+
+            if (phone.length == 10) {
+                document.getElementById("phoneMsg").innerHTML =
+                    "Valid Phone Number";
+            }
+            else {
+                document.getElementById("phoneMsg").innerHTML =
+                    "Phone number must contain 10 digits";
+            }
+        }
+
+        function showFee(fee) {
+
+            document.getElementById("fee").innerHTML =
+                "Event Fee: ₹" + fee;
+        }
+
+        function submitForm() {
+
+            document.getElementById("submitMsg").innerHTML =
+                "Registration Submitted Successfully!";
+        }
+
+        function enlargeImage(image) {
+
+            image.style.width = "400px";
+            image.style.height = "300px";
+        }
+
+        function countCharacters() {
+
+            let count =
+                document.getElementById("feedback").value.length;
+
+            document.getElementById("charCount").innerHTML =
+                "Characters: " + count;
+        }
+
+    </script>
+
+</body>
+
+</html>
