@@ -1,0 +1,32 @@
+body
+{
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 20px;
+}
+
+header
+{
+    background-color: navy;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.card
+{
+    width: 60%;
+
+    margin: 30px auto;
+
+    padding: 20px;
+
+    border: 2px solid gray;
+
+    background-color: lightblue;
+}
