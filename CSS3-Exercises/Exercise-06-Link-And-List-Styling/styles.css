@@ -1,0 +1,69 @@
+/* Navigation Menu */
+
+.nav-menu
+{
+    list-style-type: none;
+
+    padding: 0;
+
+    margin: 0;
+}
+
+
+/* Navigation Items */
+
+.nav-menu li
+{
+    display: inline-block;
+
+    margin-right: 20px;
+
+    padding: 10px;
+}
+
+
+/* Link Styling */
+
+a:link
+{
+    color: blue;
+
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: purple;
+}
+
+a:hover
+{
+    color: red;
+
+    text-decoration: underline;
+}
+
+a:active
+{
+    color: green;
+}
+
+
+/* Event List */
+
+.event-list
+{
+    list-style-type: square;
+
+    list-style-position: inside;
+}
+
+
+/* Event List Items */
+
+.event-list li
+{
+    padding: 5px;
+
+    margin: 5px;
+}
