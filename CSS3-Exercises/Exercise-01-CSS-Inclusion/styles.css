@@ -1,0 +1,15 @@
+/* Header Styles */
+
+.welcome
+{
+    color: blue;
+    text-align: center;
+}
+
+/* Paragraph Styles */
+
+p
+{
+    font-size: 18px;
+    color: green;
+}
