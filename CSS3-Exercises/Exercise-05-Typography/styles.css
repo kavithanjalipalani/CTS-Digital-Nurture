@@ -1,0 +1,50 @@
+/* Page Styling */
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+
+    padding: 30px;
+}
+
+
+/* Main Heading */
+
+.main-title
+{
+    font-size: 40px;
+
+    font-weight: 700;
+
+    text-align: center;
+
+    text-transform: uppercase;
+
+    letter-spacing: 3px;
+}
+
+
+/* Sub Heading */
+
+.sub-title
+{
+    font-size: 28px;
+
+    font-style: italic;
+
+    color: darkblue;
+}
+
+
+/* Description */
+
+.description
+{
+    font-size: 18px;
+
+    line-height: 1.8;
+
+    text-align: justify;
+
+    letter-spacing: 1px;
+}
