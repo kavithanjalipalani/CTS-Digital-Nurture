@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Event Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+        }
+
+        form {
+            width: 400px;
+            padding: 20px;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+
+        output {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Event Registration Form</h1>
+
+    <form onsubmit="showMessage(); return false;">
+
+        <label>Name:</label>
+        <input
+            type="text"
+            placeholder="Enter your name"
+            required
+            autofocus>
+
+        <label>Email:</label>
+        <input
+            type="email"
+            placeholder="Enter your email"
+            required>
+
+        <label>Event Date:</label>
+        <input
+            type="date"
+            required>
+
+        <label>Event Type:</label>
+        <select required>
+            <option value="">Select Event</option>
+            <option>Music Festival</option>
+            <option>Sports Meet</option>
+            <option>Food Festival</option>
+            <option>Art Exhibition</option>
+        </select>
+
+        <label>Message:</label>
+        <textarea
+            rows="4"
+            placeholder="Enter your message"></textarea>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+    <br>
+
+    <output id="result"></output>
+
+    <script>
+        function showMessage() {
+            document.getElementById("result").innerHTML =
+                "Registration Successful!";
+        }
+    </script>
+
+</body>
+
+</html>
