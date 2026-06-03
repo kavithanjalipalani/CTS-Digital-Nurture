@@ -1,0 +1,50 @@
+/* Event Card */
+
+.eventCard
+{
+    border: 3px solid navy;
+
+    padding: 20px;
+
+    margin: 20px;
+
+    background-color: lightblue;
+}
+
+
+/* Input Field */
+
+input
+{
+    padding: 10px;
+
+    outline: 3px solid orange;
+}
+
+
+/* Visibility Hidden */
+
+.hiddenBox
+{
+    visibility: hidden;
+
+    background-color: lightgreen;
+
+    padding: 10px;
+
+    margin: 10px;
+}
+
+
+/* Display None */
+
+.noneBox
+{
+    display: none;
+
+    background-color: pink;
+
+    padding: 10px;
+
+    margin: 10px;
+}
